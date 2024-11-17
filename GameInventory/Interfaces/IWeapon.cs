@@ -9,10 +9,7 @@ namespace GameInventory.Interfaces
 {
     public interface IWeapon
     {
-        string Name { get; set; }
-        string Descritpion { get; set; }
-        WeaponType Type { get; set; }
-        float Weight {  get; set; }
+        WeaponTypes Type { get; set; }
         ItemRarity Rarity { get; set; }
         float Damage { get; set; }
 

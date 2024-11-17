@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameInventory.Interfaces
+namespace GameInventory.Enums
 {
-    public interface IPotion
+    public enum BulletType
     {
-
+        Normal,
+        Special,
+        Heavy
     }
 }

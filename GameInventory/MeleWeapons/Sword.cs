@@ -12,30 +12,32 @@ namespace GameInventory.Items
     /// <summary>
     /// TODO: Builder
     /// </summary>
-    public class Sword : IMeleWeapon, IWeapon, IItem
+    public class Sword : IMeleWeapon, IItem
     {
         private static int _id = 0;
         public int Id { get; private set; }
         public string Name { get; set; }
         public string Descritpion { get; set; }
-        public WeaponType Type { get; set; }
+        public WeaponTypes Type { get; set; }
         public float Weight { get; set; }
         public ItemRarity Rarity { get; set; }
         public float Damage { get; set; }
         public float AttackSpeed { get; set; }
+        public ItemType ItemType { get; set; }
 
         public Sword()
         {
             Id = _id++;
             Name = "Rusty sword";
             Descritpion = "Just an old rusty sword";
-            Type = WeaponType.Melee;
+            Type = WeaponTypes.Melee;
             Weight = 2.2f;
             Damage = 2f;
             AttackSpeed = 1f;
+            ItemType = ItemType.Weapon;
         }
         
-        public Sword(string name, string description, WeaponType type,  ItemRarity rarity, float weight, float attackSpeed)
+        public Sword(string name, string description, WeaponTypes type,  ItemRarity rarity, float weight, float attackSpeed)
         {
             Id = _id++;
             Name = name;
@@ -75,9 +77,8 @@ namespace GameInventory.Items
             }
             return damage * rarityMultiplier * (attackSpeed / weight);
         }
-        public bool IsStackable() => false;
 
-        public void Use()
+        public void Attack()
         {
             Console.WriteLine($"You attacked the enemy with your {Name} sword. Dealt {Damage:F2} damage.");
         }
@@ -87,6 +88,7 @@ namespace GameInventory.Items
             return $"Sword: \nId: {Id}, \nName: {Name}, \nDamage: {Damage:F2}, \nRarity: {Rarity}, \nAttackSpeed: {AttackSpeed}\n";
         }
 
+        public bool IsStackable() => false;
 
-    }
+       }
 }

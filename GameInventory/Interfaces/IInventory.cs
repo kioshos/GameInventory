@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace GameInventory.Interfaces
 {
-    public interface IPotion
+    public interface IInventory
     {
+        List<IItem> Items { get; }
+        void AddItem();
+        void RemoveItem();
 
     }
 }

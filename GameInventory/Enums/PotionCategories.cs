@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameInventory.Interfaces
+namespace GameInventory.Enums
 {
-    public interface IPotion
+    public enum PotionCategories
     {
-
+        Mana,
+        Healing,
+        Immortality,
+        Damage
     }
 }

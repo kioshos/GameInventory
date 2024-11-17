@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameInventory.Enums
+namespace GameInventoryTests.MeleWeapons
 {
-    public enum WeaponType
+    internal class SwordTests
     {
-        Melee,
-        Firearm,
-        Projectile,
-        Magical
     }
 }

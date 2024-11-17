@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace GameInventory.Interfaces
 {
-    public interface IPotion
+    internal interface IFirearmWeapon
     {
-
+        void Reload();
     }
 }

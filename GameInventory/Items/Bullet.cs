@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameInventory.Interfaces
+namespace GameInventory.Items
 {
-    public interface IPotion
+    public class Bullet
     {
 
     }

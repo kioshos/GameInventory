@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameInventory.Interfaces
 {
-    public interface IPotion
+    internal interface IBullet : IItem
     {
 
     }

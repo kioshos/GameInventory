@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameInventory", "GameInventory\GameInventory.csproj", "{B9DAD307-CE55-41F6-BC2B-A621D2E972CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameInventory.Tests", "GameInventory.Tests\GameInventory.Tests.csproj", "{8AE3787E-539F-4E47-8F32-0C7951AFE24C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B9DAD307-CE55-41F6-BC2B-A621D2E972CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9DAD307-CE55-41F6-BC2B-A621D2E972CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9DAD307-CE55-41F6-BC2B-A621D2E972CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AE3787E-539F-4E47-8F32-0C7951AFE24C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE3787E-539F-4E47-8F32-0C7951AFE24C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE3787E-539F-4E47-8F32-0C7951AFE24C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE3787E-539F-4E47-8F32-0C7951AFE24C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,10 +1,5 @@
 ﻿using GameInventory.Enums;
 using GameInventory.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameInventory.Items
 {
@@ -28,9 +23,10 @@ namespace GameInventory.Items
             MagazineCapacity = magazineCapacity;
         }
 
-        public FirearmMagazine()
+        public FirearmMagazine(int magazineCapacity)
         {
-            CurrentMagazineCapacity = MagazineCapacity;
+            CurrentMagazineCapacity = magazineCapacity;
+            MagazineCapacity = magazineCapacity;
         }
         public FirearmMagazine(List<Bullet> bullets)
         {

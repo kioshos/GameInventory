@@ -1,13 +1,8 @@
 ﻿using GameInventory.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameInventory.Interfaces
 {
-    public interface IWeapon
+    public interface IWeapon : IItem
     {
         WeaponTypes Type { get; set; }
         ItemRarity Rarity { get; set; }

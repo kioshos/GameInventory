@@ -5,7 +5,7 @@ using GameInventory.Items;
 
 namespace GameInventory.FirearmWeapons
 {
-    public class Pistol : IFirearmWeapon, IItem
+    public class Pistol : IFirearmWeapon
     {
         
         private FirearmMagazine _magazine;
@@ -25,7 +25,7 @@ namespace GameInventory.FirearmWeapons
             _magazine = magazine;
         }
 
-
+       
         public void Reload()
         {
             if (_magazine.CurrentMagazineCapacity < _magazine.MagazineCapacity)

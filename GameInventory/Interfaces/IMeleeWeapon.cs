@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GameInventory.Interfaces
 {
-    public interface IMeleWeapon : IWeapon
+    public interface IMeleeWeapon : IWeapon
     {
         float AttackSpeed { get; set; }
         float CalculateMeleDamage(ItemRarity rarity, float weight, float attackSpeed);

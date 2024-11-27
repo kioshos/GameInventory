@@ -13,10 +13,6 @@ namespace GameInventory.Interfaces
         ItemRarity Rarity { get; set; }
         float Damage { get; set; }
 
-        /// <summary>
-        /// Calcilate damage of weapon
-        /// </summary>
-        /// <returns></returns>
-        //float CalculateDamage(ItemRarity rarity, float weight, float attackSpeed);
+        void DisplayDamage();
     }
 }

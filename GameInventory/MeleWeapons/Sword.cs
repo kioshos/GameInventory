@@ -1,18 +1,12 @@
 ﻿using GameInventory.Enums;
 using GameInventory.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameInventory.Items
 {
     /// <summary>
     /// TODO: Builder
     /// </summary>
-    public class Sword : IMeleWeapon, IItem
+    public class Sword : IMeleeWeapon, IItem
     {
         private static int _id = 0;
         public int Id { get; private set; }
@@ -82,7 +76,10 @@ namespace GameInventory.Items
         {
             Console.WriteLine($"You attacked the enemy with your {Name} sword. Dealt {Damage:F2} damage.");
         }
-
+        public void DisplayDamage()
+        {
+           Console.WriteLine($"Damage of {Name} = {Damage:F2}");
+        }
         public override string ToString()
         {
             return $"Sword: \nId: {Id}, \nName: {Name}, \nDamage: {Damage:F2}, \nRarity: {Rarity}, \nAttackSpeed: {AttackSpeed}\n";
